@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+# Recipe.destroy_all
+# Ingredient.destroy_all
 #
-# Examples:
+# recipes = [
+#   {title: "Chocolate chip cookies"},
+#   {title: "Cheesecake"},
+#   {title: "Lemon drizzle cake"},
+#   {title: "Brownies"}
+# ]
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# recipes.each {|recipe| Recipe.create(recipe)}
+#
+# ingredients = [
+#   {name: "Chocolate chips", quantity: "50g"},
+#   {name: "Chocolate chips", quantity: "50g"},
+#   {name: "Lemon zest", quantity: "2g"},
+#   {name: "Cream cheese", quantity: "100g"},
+#   {name: "Graham crackers", quantity: "80g"},
+#   {name: "Butter", quantity: "100g"}
+# ]
+#
+# ingredients.each {|ingredient| Ingredient.create(ingredient)}
